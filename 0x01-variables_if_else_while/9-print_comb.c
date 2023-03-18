@@ -12,17 +12,17 @@
 
 int main(void)
 {
-	char alpha = '0';
+	int digit = '0';
 
-	while (alpha <= '9')
+	while (digit <= '9')
 	{
-		putchar(alpha);
-		if (alpha != '9')
+		putchar(digit);
+		if (digit != '9')
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		alpha++;
+		digit++;
 	}
 	putchar('\n');
 	return (0);
