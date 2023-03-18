@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -12,9 +10,11 @@
 
 int main(void)
 {
-	int i = '0', j = '0';
+	int i = '0', j;
+
 	while (i <= '9')
 	{
+		j = '0';
 		while (j <= '9')
 		{
 			if (j > i)
