@@ -22,7 +22,7 @@ int main(void)
 				{
 					putchar(i);
 					putchar(j);
-					if (i != '9' || 9 != '8')
+					if (i != '9' || j != '9')
 					{
 						putchar(' ');
 					}
@@ -35,8 +35,7 @@ int main(void)
 					}
 				}
 			}
-		}
-		
+		}		
 	}
 	putchar('\n');
 	return (0);
