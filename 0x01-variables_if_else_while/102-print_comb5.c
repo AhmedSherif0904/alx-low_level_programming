@@ -26,6 +26,8 @@ int main(void)
 					{
 						putchar(' ');
 					}
+					if (l > k)
+					{
 					putchar(k);
 					putchar(l);
 					if (!(k == '9' && l == '9' && i == '9' && j == '8'))
@@ -33,9 +35,10 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
+					}
 				}
 			}
-		}		
+		}
 	}
 	putchar('\n');
 	return (0);
