@@ -22,5 +22,5 @@ int _islower(char c)
 			r = 1;
 		}
 	}
-	return(r);
+	return (r);
 }
