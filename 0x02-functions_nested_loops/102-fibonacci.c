@@ -23,7 +23,7 @@ int main(void)
 		ro = rn;
 		rn = r;
 		printf("%ld", r);
-		if (i != 50)
+		if (i < 49)
 		{
 			printf(", ");
 		}
