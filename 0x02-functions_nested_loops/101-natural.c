@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * print_35_multiples - entry point
+ * main - entry point
  *
  *
  *
@@ -13,7 +13,7 @@
  * Return: -1
  */
 
-int print_35_multiples(void)
+int main(void)
 {
 	int i, sum;
 
@@ -24,6 +24,6 @@ int print_35_multiples(void)
 			sum = sum + i;
 		}
 	}
-
-	return (sum);
+	printf("%d", sum);
+	return (0);
 }
