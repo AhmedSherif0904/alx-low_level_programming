@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * print_50_fib - entry point
+ * main - entry point
  *
  *
  *
@@ -13,7 +13,7 @@
  * Return: -1
  */
 
-void print_50_fib(void)
+int main(void)
 {
 	long i, ro = 0, rn = 1, r;
 
