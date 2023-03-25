@@ -27,7 +27,7 @@ int main(void)
 			sum = sum + r;
 			if (r < 4000000)
 			{
-				//printf(", ");
+				/*printf(", ");*/
 			}
 		}
 	}
