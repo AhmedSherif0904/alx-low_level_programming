@@ -5,8 +5,6 @@
  * description: test
  * Return: 0
  *
- *
- *
  */
 int main(void)
 {
