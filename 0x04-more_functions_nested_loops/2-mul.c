@@ -1,5 +1,5 @@
 /**
- * _mul - entry point
+ * mul - entry point
  *@a: char
  *@b: char
  * description : prints putchar
