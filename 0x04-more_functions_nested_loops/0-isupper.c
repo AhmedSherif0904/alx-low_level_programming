@@ -1,6 +1,6 @@
 /**
  * _isupper - entry point
- *
+ *@c: char
  * description : prints putchar
  *
  * Return: -1
