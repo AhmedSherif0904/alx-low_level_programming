@@ -17,7 +17,7 @@ int main(void)
 {
 	long i, ro = 0, rn = 1, r;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		r = ro + rn;
 		ro = rn;
