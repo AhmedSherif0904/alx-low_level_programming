@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long long int i, num, max;
+	long int i, num, max;
 
 	num = 612852475143;
 	max = -1;
@@ -21,6 +21,6 @@ int main(void)
 		}
 	}
 
-	printf("%lld\n", max);
+	printf("%ld\n", max);
 	return (0);
 }
