@@ -1,24 +1,26 @@
 #include "main.h"
+
 /**
  * main - entry point
- *  : char
- * description : prints putchar
  *
- * Return: -1
+ * Return: Always 0
  */
-
 int main(void)
 {
-	long int i, max, num;
+	long long int i, num, max;
 
 	num = 612852475143;
-	for (i = 0; i < num; i++)
+	max = -1;
+
+	for (i = 2; i <= num; i++)
 	{
-		if (num % i == 0)
+		while (num % i == 0)
 		{
 			max = i;
+			num /= i;
 		}
 	}
-	printf("%ld\n", max);
+
+	printf("%lld\n", max);
 	return (0);
 }
