@@ -11,4 +11,3 @@ typedef void (*char_func_ptr)(char *);
 void print_name(char *name, char_func_ptr f);
 
 #endif /* FUNCTION_POINTERS_H */
-
