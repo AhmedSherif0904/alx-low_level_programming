@@ -8,7 +8,7 @@
 /**
  * struct op - Struct op
  *
- * @op: The operator
+ * @op: The operatorasdasdasda
  * @f: The function associated
  */
 typedef struct op
