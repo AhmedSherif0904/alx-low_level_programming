@@ -7,7 +7,8 @@
  * print_all - prints anything
  * @format: list of types of arguments passed to the function
  *
- * Description: c: char, i: integer, f: float, s: char * (if the string is NULL, print (nil) instead
+ * Description: c: char, i: integer, f: float, s: char
+ * * (if the string is NULL, print (nil) instead
  * Any other char should be ignored.
  * You are not allowed to use for, goto, ternary operator, else, do ... while
  * You can use a maximum of 2 while loops, 2 if
