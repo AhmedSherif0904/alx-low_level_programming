@@ -1,58 +1,59 @@
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
 #include <stddef.h>
-#include "variadic_functions.h"
 
 /**
  * print_all - prints anything
  * @format: list of types of arguments passed to the function
+ * c: char
+ * i: integer
+ * f: float
+ * s: char * (if the string is NULL, print (nil) instead
+ * any other char should be ignored
  *
- * Description: c: char, i: integer, f: float, s: char
- * * (if the string is NULL, print (nil) instead
- * Any other char should be ignored.
- * You are not allowed to use for, goto, ternary operator, else, do ... while
- * You can use a maximum of 2 while loops, 2 if
- * You can declare a maximum of 9 variables
- * You are allowed to use printf
- * Print a new line at the end of your function
+ * Return: void
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	int i = 0;
+	va_list arg_list;
+	unsigned int i = 0, j = 0;
 	char *str;
 
-	va_start(args, format);
+	va_start(arg_list, format);
 
 	while (format && format[i])
 	{
+		j = 0;
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(args, int));
+				printf("%c", va_arg(arg_list, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(args, int));
+				printf("%d", va_arg(arg_list, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(args, double));
+				printf("%f", va_arg(arg_list, double));
 				break;
 			case 's':
-				str = va_arg(args, char *);
+				str = va_arg(arg_list, char *);
 				if (str == NULL)
+				{
 					printf("(nil)");
-				else
-					printf("%s", str);
+					break;
+				}
+				printf("%s", str);
 				break;
 			default:
+				j = 1;
 				break;
 		}
-		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' ||
-					      format[i] == 'f' || format[i] == 's'))
+		if (format[i + 1] && j == 0)
 			printf(", ");
 		i++;
 	}
 	printf("\n");
-	va_end(args);
+	va_end(arg_list);
 }
 
